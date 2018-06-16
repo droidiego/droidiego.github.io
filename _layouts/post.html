@@ -6,10 +6,7 @@
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <!-- css import -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- / css import -->
     <!-- import jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
@@ -18,21 +15,21 @@
 
         var locationPathname = location.pathname;
 
-        if (locationPathname == "/" || locationPathname == "/index" || locationPathname == "/test/" || locationPathname == "/test/index") {
+        if (locationPathname == "/" || locationPathname == "/Home") {
 
-          $(".header__nav > ul > li.header__nav-item:nth-child(1)").addClass("active");
+          $(".header__nav ul > li.header__nav-item:nth-child(1)").addClass("active");
 
-        } else if (locationPathname == "/news" || locationPathname == "/test/news") {
+        } else if (locationPathname == "/news") {
 
-          $(".header__nav > ul > li.header__nav-item:nth-child(2)").addClass("active");
+          $(".header__nav ul > li.header__nav-item:nth-child(2)").addClass("active");
 
-        } else if (locationPathname == "/ecd" || locationPathname == "/test/ecd") {
+        } else if (locationPathname == "/ecd") {
 
-          $(".header__nav > ul > li.header__nav-item:nth-child(3)").addClass("active");
+          $(".header__nav ul > li.header__nav-item:nth-child(3)").addClass("active");
 
-        } else if (locationPathname == "/ac" || locationPathname == "/test/ac") {
+        } else if (locationPathname == "/ac") {
 
-          $(".header__nav > ul > li.header__nav-item:nth-child(3)").addClass("active");
+          $(".header__nav ul > li.header__nav-item:nth-child(4)").addClass("active");
         }
       });
     </script>
@@ -49,8 +46,6 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %} -->
-      <img src="./assets/img/droidiego_avatar_small.png" alt="DroiDiego Avatar"
-        class="header__avatar">
     </section>
     <!-- / header -->
     <!-- nav -->
@@ -58,47 +53,30 @@
       <nav id="menu" class="header__nav">
         <ul>
           <li class="header__nav-item">
-            <a class="header__nav-item-link" href="./index">Home</a>
+            <a class="header__nav-item-link" href="./index.html">
+              <span class="header__nav-item-text">Home</span>
+            </a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link" href="./news/index">News</a>
-          </li>
-          <!-- <li class="header__nav-item">
-            <a class="header__nav-item-link" href="./salesforce">
-              <span class="header__nav-item-text">SalesForce</span>
+            <a class="header__nav-item-link" href="./news/index.html">
+              <span class="header__nav-item-text">News</span>
             </a>
-          </li> -->
-          <li class="header__nav-item has-drop-down">
-            <a class="header__nav-item-link" href="#">
-              Android
-              <i aria-hidden="true" class="fa fa-chevron-down"></i>
-            </a>
-            <ul>
-              <li class="header__nav-item">
-                <a class="header__nav-item-link" href="./ecd">Easy Contact Delete</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-item-link" href="./ac">Auto Connection</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-item-link" href="./coow">Connection On/Off widget</a>
-              </li>
           </li>
-          <!-- <li class="header__nav-item">
-            <a class="header__nav-item-link" href="./ecd">
+          <li class="header__nav-item">
+            <a class="header__nav-item-link" href="./ecd.html">
               <span class="header__nav-item-text">Easy Contact Delete</span>
             </a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link" href="./ac">
+            <a class="header__nav-item-link" href="./ac.html">
               <span class="header__nav-item-text">Auto Connection</span>
             </a>
-          </li> -->
+          </li>
           <!--<li class="header__nav-item">
-            <a class="header__nav-item-link" href="./download">Download</a>
+            <a class="header__nav-item-link" href="./download.html">Download</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item-link" class="active" href="./development">Development</a>
+            <a class="header__nav-item-link" class="active" href="./development.html">Development</a>
           </li>
           <li style="margin-left: 30px;">
             <iframe src="./github-btn.html?user=droidiego&amp;repo=test&amp;type=watch&amp;count=true" allowtransparency="true"
