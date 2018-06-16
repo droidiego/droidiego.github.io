@@ -24,7 +24,7 @@ Backup your contacts before use, so you can get it back if necessary.
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Privacy Policy
+### Privacy
 
 "Easy Contacts Delete" app don't store or transmit your contact information beyond your phone.
 
